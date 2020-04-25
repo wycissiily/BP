@@ -47,9 +47,7 @@ struct BP{
 float num[784];
 int main(){
     bp.load("233.bp");
-    while(true){
-        for(int i=0;i<784;i++)scanf("%f",&num[i]);
-        bp.calc(num);
-        printf("ANSWER:%d\n",bp.answer());
-    }
+    for(int i=0;i<784;i++)scanf("%f",&num[i]);
+    bp.calc(num);
+    printf("ANSWER:%d\n",bp.answer());
 }
